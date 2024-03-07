@@ -4,11 +4,11 @@ from setuptools import setup
 
 this_directory = Path(__file__).parent
 long_description = (this_directory / 'README.md').read_text()
-requirements = [req.strip() for req in open(this_directory / 'requirements.txt')]
+requirements = ['requests']
 
 setup(
     name='tgutils',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/sdelquin/tgutils.git',
     author='Sergio Delgado Quintero',
     author_email='sdelquin@gmail.com',
