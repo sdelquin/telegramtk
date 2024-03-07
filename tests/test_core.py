@@ -1,7 +1,7 @@
 import pytest
 from prettyconf import config
 
-import tgutils
+import telegramtk
 
 
 @pytest.fixture
@@ -21,9 +21,9 @@ def msg():
 
 def test_if_send_message_fails_when_token_is_unset(recipient, msg):
     with pytest.raises(ValueError, match='Bot token is undefined! Use init()'):
-        tgutils.send_message(recipient, msg)
+        telegramtk.send_message(recipient, msg)
 
 
 def test_send_message_works(token, recipient, msg):
-    tgutils.init(token)
-    tgutils.send_message(recipient, msg)
+    telegramtk.init(token)
+    telegramtk.send_message(recipient, msg)

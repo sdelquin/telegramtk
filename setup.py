@@ -7,14 +7,14 @@ long_description = (this_directory / 'README.md').read_text()
 requirements = ['requests']
 
 setup(
-    name='tgutils',
-    version='0.0.3',
-    url='https://github.com/sdelquin/tgutils.git',
+    name='telegramtk',
+    version='0.0.4',
+    url='https://github.com/sdelquin/telegramtk.git',
     author='Sergio Delgado Quintero',
     author_email='sdelquin@gmail.com',
     description='Telegram utilities',
     license='MIT',
-    packages=['tgutils'],
+    packages=['telegramtk'],
     install_requires=requirements,
     long_description=long_description,
     long_description_content_type='text/markdown',

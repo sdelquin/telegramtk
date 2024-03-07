@@ -9,4 +9,4 @@ upload: build
 clean:
     rm -fr build dist *egg* *cache*
 open-pypi:
-    open https://pypi.org/project/tgutils/
+    open https://pypi.org/project/telegramtk/

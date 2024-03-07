@@ -1,4 +1,4 @@
-# tgutils
+# telegramtk
 
 **Telegram utilities**
 
@@ -7,23 +7,23 @@ This package provides easy (and sync) access for the Telegram Bot API.
 ## Installation
 
 ```console
-pip install tgutils
+pip install telegramtk
 ```
 
 ## Setup
 
 ```python
-import tgutils
+import telegramtk
 
-tgutils.init('<your-telegram-bot-token-here>')
+telegramtk.init('<your-telegram-bot-token-here>')
 ```
 
 ## Send message
 
 ```python
-import tgutils
+import telegramtk
 
-tgutils.send_message(to, msg)
+telegramtk.send_message(to, msg)
 ```
 
 → `msg` can be "Markdown" formatted.
