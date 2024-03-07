@@ -8,11 +8,11 @@ requirements = ['requests']
 
 setup(
     name='telegramtk',
-    version='0.0.4',
+    version='0.0.5',
     url='https://github.com/sdelquin/telegramtk.git',
     author='Sergio Delgado Quintero',
     author_email='sdelquin@gmail.com',
-    description='Telegram utilities',
+    description='Telegram toolkit',
     license='MIT',
     packages=['telegramtk'],
     install_requires=requirements,

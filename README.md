@@ -1,6 +1,6 @@
 # telegramtk
 
-**Telegram utilities**
+**Telegram toolkit**
 
 This package provides easy (and sync) access for the Telegram Bot API.
 
