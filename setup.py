@@ -8,7 +8,7 @@ requirements = ['requests']
 
 setup(
     name='tgutils',
-    version='0.0.2',
+    version='0.0.3',
     url='https://github.com/sdelquin/tgutils.git',
     author='Sergio Delgado Quintero',
     author_email='sdelquin@gmail.com',
