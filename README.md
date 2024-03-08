@@ -12,6 +12,8 @@ pip install telegramtk
 
 ## Setup
 
+First of all you must [create a Telegram bot](https://core.telegram.org/bots/features#creating-a-new-bot) and grab the **bot token**.
+
 ```python
 import telegramtk
 
@@ -26,7 +28,10 @@ import telegramtk
 telegramtk.send_message(to, msg)
 ```
 
-→ `msg` can be "Markdown" formatted.
+Notes:
+
+- `to` is the recipient and must be a _chat id_ (integer value) or a _known name_ (string value).
+- `msg` is the message (string value) and can be "Markdown" formatted.
 
 ## Escape markdown
 
