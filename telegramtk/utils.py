@@ -1,9 +1,11 @@
 import re
 
+from .exceptions import TelegramError
+
 
 def check_token(token: str) -> bool:
     if not token:
-        raise ValueError('Bot token is undefined! Use init()')
+        raise TelegramError('Bot token is undefined! Use init()')
     return True
 
 

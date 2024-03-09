@@ -33,6 +33,20 @@ Notes:
 - `to` is the recipient and must be a _chat id_ (integer value) or a _known name_ (string value).
 - `msg` is the message (string value) and can be "Markdown" formatted.
 
+### Error handling
+
+If an error ocurred during the request to the Telegram API, an exception is raised. You can find this exception at:
+
+```python
+import telegramtk
+from telegramtk.exceptions import TelegramError
+
+try:
+    telegramtk.send_message(to, msg)
+except TelegramError as err:
+    handle_error(err)
+```
+
 ## Escape markdown
 
 It's common to send Markdown content through Telegram, but sometimes we want to escape Markdown symbols in order to avoid syntax errors when parsing.
