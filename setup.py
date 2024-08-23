@@ -8,7 +8,7 @@ requirements = ['requests']
 
 setup(
     name='telegramtk',
-    version='0.0.8',
+    version='0.1.0',
     url='https://github.com/sdelquin/telegramtk.git',
     author='Sergio Delgado Quintero',
     author_email='sdelquin@gmail.com',
