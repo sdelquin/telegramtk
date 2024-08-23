@@ -1,4 +1,3 @@
-import re
 from http import HTTPStatus
 
 import requests
@@ -22,10 +21,3 @@ def send_message(to: str, msg: str) -> None:
     if response.status_code != HTTPStatus.OK:
         data = response.json()
         raise TelegramError(data['description'])
-
-
-def escape_markdown(text: str) -> str:
-    """Helper function to escape telegram markup symbols.
-    Reference: https://github.com/python-telegram-bot/python-telegram-bot/blob/master/telegram/helpers.py#L45"""
-    escape_chars = r'\_*[]()~`>#+-=|{}.!'
-    return re.sub(f'([{re.escape(escape_chars)}])', r'\\\1', text)
